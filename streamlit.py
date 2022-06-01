@@ -13,4 +13,4 @@ if not file:
 
 if isinstance(file, BytesIO):
     show_file.image(file)
-file.close()
+
