@@ -10,7 +10,7 @@ show_file = st.empty()
 if not file:
     show_file.info("Please upload a file of type: " + ", ".join(["csv", "png", "jpg"]))
 
-content = file.getvalue()
+
 if isinstance(file, BytesIO):
     show_file.image(file)
 file.close()
